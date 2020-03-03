@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3">
+
+        <Button
+            android:onClick="booleanTest"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="boolean"/>
+
+        <Button
+            android:onClick="byteTest"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="byte"/>
+
+        <Button
+            android:onClick="charTest"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="char"/>
+
+        <Button
+            android:onClick="shortTest"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="short"/>
+
+        <Button
+            android:onClick="intTest"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="int"/>
+
+        <Button
+            android:onClick="longTest"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="long"/>
+
+        <Button
+            android:onClick="floatTest"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="float"/>
+
+        <Button
+            android:onClick="doubleTest"
+            android:layout_columnWeight="1"
+            android:textAllCaps="false"
+            android:text="double"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/log_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

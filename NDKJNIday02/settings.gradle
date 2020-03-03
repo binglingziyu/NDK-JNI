@@ -1,0 +1,2 @@
+rootProject.name='NDK-JNI-day02'
+include ':app'

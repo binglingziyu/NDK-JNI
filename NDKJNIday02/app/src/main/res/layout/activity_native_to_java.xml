@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:onClick="booleanTest"
+            android:textAllCaps="false"
+            android:text="boolean"/>
+
+        <TextView
+            android:id="@+id/boolean_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="byteTest"
+            android:textAllCaps="false"
+            android:text="byte"/>
+
+        <TextView
+            android:id="@+id/byte_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="charTest"
+            android:textAllCaps="false"
+            android:text="char"/>
+
+        <TextView
+            android:id="@+id/char_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="shortTest"
+            android:textAllCaps="false"
+            android:text="short"/>
+
+        <TextView
+            android:id="@+id/short_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="intTest"
+            android:textAllCaps="false"
+            android:text="int"/>
+
+        <TextView
+            android:id="@+id/int_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="longTest"
+            android:textAllCaps="false"
+            android:text="long"/>
+
+        <TextView
+            android:id="@+id/long_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="floatTest"
+            android:textAllCaps="false"
+            android:text="float"/>
+
+        <TextView
+            android:id="@+id/float_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="doubleTest"
+            android:textAllCaps="false"
+            android:text="double"/>
+
+        <TextView
+            android:id="@+id/double_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+    </GridLayout>
+
+</LinearLayout>

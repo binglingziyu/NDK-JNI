@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <Button
+            android:onClick="charConcatTest"
+            android:textAllCaps="false"
+            android:text="A + B + C"/>
+
+        <TextView
+            android:id="@+id/char_concat_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="sumTest"
+            android:textAllCaps="false"
+            android:text="x+y"/>
+
+        <TextView
+            android:id="@+id/sum_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="twoExpTest"
+            android:textAllCaps="false"
+            android:text="2^10"/>
+
+        <TextView
+            android:id="@+id/two_exp_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="calcMoneyTest"
+            android:textAllCaps="false"
+            android:text="how much"/>
+
+        <TextView
+            android:id="@+id/calc_money_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+    </GridLayout>
+
+</LinearLayout>
