@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="练习"/>
+
+        <Button
+            android:onClick="getNativeArray"
+            android:textAllCaps="false"
+            android:text="获取数组"/>
+
+        <TextView
+            android:id="@+id/get_native_array_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="formatArray"
+            android:textAllCaps="false"
+            android:text="格式化输出"/>
+
+        <TextView
+            android:id="@+id/format_array_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="calcScorePass"
+            android:textAllCaps="false"
+            android:text="计算成绩"/>
+
+        <TextView
+            android:id="@+id/calc_score_pass_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <Button
+            android:onClick="calcTotalMoney"
+            android:textAllCaps="false"
+            android:text="计算价格"/>
+
+        <TextView
+            android:id="@+id/calc_total_money_text"
+            android:layout_columnWeight="5"
+            android:text="-"/>
+
+        <View
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:onClick="javaClassTest"
+            android:textAllCaps="false"
+            android:text="Java Class"/>
+
+        <TextView
+            android:id="@+id/native_java_object_text"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:text="-"
+            />
+
+    </GridLayout>
+
+</LinearLayout>
