@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="md5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MD5"/>
+
+    <TextView
+        android:id="@+id/md5_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Java 实现: -\n\nNative 实现：-"/>
+
+    <Button
+        android:onClick="sha1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHA1"/>
+
+    <TextView
+        android:id="@+id/sha1_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Java 实现: -\n\nNative 实现：-"/>
+
+    <Button
+        android:onClick="sha256"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHA256"
+        />
+
+    <TextView
+        android:id="@+id/sha256_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Java 实现: -\n\nNative 实现：-"/>
+
+</LinearLayout>
