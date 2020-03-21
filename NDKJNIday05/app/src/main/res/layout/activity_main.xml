@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="javaGetSignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java 获取签名"/>
+
+    <TextView
+        android:id="@+id/java_signature_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="MD5:-\nSHA1:-\nSHA256:-\n"/>
+
+    <Button
+        android:onClick="nativeGetSignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Native 获取签名"/>
+
+    <TextView
+        android:id="@+id/native_signature_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="MD5:-\nSHA1:-\nSHA256:-\n"/>
+
+    <Button
+        android:onClick="checkSignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查应用签名"
+        />
+
+    <TextView
+        android:id="@+id/check_signature_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="-"/>
+
+</LinearLayout>
